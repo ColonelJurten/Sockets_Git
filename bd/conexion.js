@@ -3,8 +3,8 @@ require('dotenv').config()
 async function conectarMongoDB(){
     mongoose.set('strictQuery', true);
     try{
-      //const conexion = await mongoose.connect(process.env.mongoAtlas);
-      const conexion = await mongoose.connect(process.env.mongoLocal);
+      const conexion = await mongoose.connect(process.env.mongoAtlas);
+      //const conexion = await mongoose.connect(process.env.mongoLocal);
         console.log('Conexion a MongoDB correcta');
 
     }catch(err){
